@@ -19,4 +19,16 @@ public class HomeController {
     String showAbout(){
         return "Director Comunity";
     }
+
+    @GetMapping("/Calc")
+    @ResponseBody
+    String showCalc(int a, int b){
+        return "계산결과 : %d" .formatted(a + b);
+    }
+
+    @GetMapping("/Calc2")
+    @ResponseBody
+    String showCalc2(Integer a, Integer b){
+        return "a :" + a + ", b : " + b;
+    }
 }
