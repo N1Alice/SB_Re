@@ -229,6 +229,17 @@ public class HomeController {
         //모델에 넣으면 자동으로 들어간다.
         return "Calc21";
     }
+
+
+    int num = 0;
+
+    @GetMapping("/Calc22")
+    @ResponseBody
+    int showCalc22() {
+        num++;
+
+        return num;
+    }
 }
 
 @AllArgsConstructor
