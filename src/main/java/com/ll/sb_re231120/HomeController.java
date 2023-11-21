@@ -3,6 +3,7 @@ package com.ll.sb_re231120;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -214,6 +215,19 @@ public class HomeController {
                 """.formatted(subject, content);
 
         return html;
+    }
+
+    @GetMapping("/Calc20")
+    String showCalc20() {
+        return "Calc20";
+    }
+
+    @GetMapping("/Calc21")
+    String showCalc21(Model model) {
+        model.addAttribute("v1", "Hello");
+        model.addAttribute("v2", "Nice to meet you");
+        //모델에 넣으면 자동으로 들어간다.
+        return "Calc21";
     }
 }
 
