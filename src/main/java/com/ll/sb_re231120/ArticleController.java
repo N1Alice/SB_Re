@@ -27,7 +27,7 @@ public class ArticleController {
         Article article = new Article(articles.size() + 1, title, body);
         RsData<Article> rs = new RsData(
                 "S-1",
-                "%d번 게시물이 작성되었습니다.",
+                "%d번 게시물이 작성되었습니다.".formatted(article.getId()),
                 article
         );
 
