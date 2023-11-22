@@ -34,8 +34,8 @@ public class ArticleController {
 
         String resultCode = rs.getResultCode();
         String msg = rs.getMsg();
-        Article _article = (Article) rs.getData();
-//추상적에서 구체적으로 갈때는(형변환) (Article) 해줘야한다 그냥 외워라 약속이다
+        Article _article = rs.getData();
+//나는 형변환이 싫어요
         return rs;
     }
 
@@ -54,11 +54,12 @@ public class ArticleController {
 
 @AllArgsConstructor
 @Getter
-class RsData<T> {
+class RsData {
     private String resultCode;
     private String msg;
-    private T data;
-    //옛날에는 오브젝트 사용함
+    private Article data;
+    //형변환이 귀찮으니 Article로 가자, 범용성을 잃었지만 표리일체다
+    //Object는 다 들어올수있지만 나갈때 형변환을 해줘야 한다.
 }
 
 @AllArgsConstructor
