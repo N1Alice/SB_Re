@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -27,7 +27,9 @@ public class ArticleController {
     ) {
         Article article = new Article(articles.size()+1, title, body);
 // 자동으로 크기 확장
-        Map<String, Object> rs = new HashMap<>();
+        Map<String, Object> rs = new LinkedHashMap<>();
+        //해쉬맵은 순서를 기억못한다, 링크드 해쉬맵은 순서를 기억한다.
+        rs.put("resultCode", "S-1");
         rs.put("msg", "%d번 게시물이 작성되었습니다.".formatted(article.getId()));
         rs.put("data", article);
 
