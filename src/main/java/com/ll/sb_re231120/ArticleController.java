@@ -25,8 +25,7 @@ public class ArticleController {
             String body
     ) {
         Article article = new Article(articles.size() + 1, title, body);
-// 자동으로 크기 확장
-        RsData rs = new RsData(
+        RsData<Article> rs = new RsData(
                 "S-1",
                 "%d번 게시물이 작성되었습니다.",
                 article
@@ -35,7 +34,6 @@ public class ArticleController {
         String resultCode = rs.getResultCode();
         String msg = rs.getMsg();
         Article _article = rs.getData();
-//나는 형변환이 싫어요
         return rs;
     }
 
@@ -54,12 +52,11 @@ public class ArticleController {
 
 @AllArgsConstructor
 @Getter
-class RsData {
+class RsData<T> {
     private String resultCode;
     private String msg;
-    private Article data;
-    //형변환이 귀찮으니 Article로 가자, 범용성을 잃었지만 표리일체다
-    //Object는 다 들어올수있지만 나갈때 형변환을 해줘야 한다.
+    private T data;
+    //미완성 시켜라, T는 정해진것이 아닌 임의
 }
 
 @AllArgsConstructor
