@@ -1,4 +1,4 @@
-package com.ll.sb_re231120;
+package com.ll.sb_re231120.domain.home.home.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
