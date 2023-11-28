@@ -14,8 +14,7 @@ public class ArticleService {
 
     public Article write(String title, String body) {
 
-        Article article =
-                new Article(title, body);
+        Article article = new Article(title, body);
 
         articleRepository.save(article);
 
