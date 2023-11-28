@@ -2,7 +2,6 @@ package com.ll.sb_re231120.domain.article.article.Service;
 
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.domain.article.article.repository.ArticleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -12,7 +11,6 @@ public class ArticleService {
 
     private final ArticleRepository articleRepository;
 
-    @Autowired // 생성자 주입
     public ArticleService(ArticleRepository articleRepository) {
         this.articleRepository = articleRepository;
     }
