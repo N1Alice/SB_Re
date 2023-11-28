@@ -14,8 +14,13 @@ import java.util.List;
 @Controller
 public class ArticleController {
 
-    @Autowired // 필드 주입, final 은 뺀다.
-    private ArticleService articleService; // new 없어도 자동으로 이행, final 제거
+    private  final ArticleService articleService;
+
+    @Autowired
+    public ArticleController(ArticleService articleService) {
+        this.articleService = articleService;
+    }
+
 
 
     @GetMapping("/article/write")
