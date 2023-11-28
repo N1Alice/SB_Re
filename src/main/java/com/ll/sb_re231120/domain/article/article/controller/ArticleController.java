@@ -3,6 +3,7 @@ package com.ll.sb_re231120.domain.article.article.controller;
 import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.global.rsData.RsData;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,7 +14,8 @@ import java.util.List;
 @Controller
 public class ArticleController {
 
-    private final ArticleService articleService = new ArticleService();
+    @Autowired // 필드 주입, final 은 뺀다.
+    private ArticleService articleService; // new 없어도 자동으로 이행, final 제거
 
 
     @GetMapping("/article/write")
