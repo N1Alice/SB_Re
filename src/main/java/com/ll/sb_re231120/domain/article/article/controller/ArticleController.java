@@ -3,6 +3,7 @@ package com.ll.sb_re231120.domain.article.article.controller;
 import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.global.rsData.RsData;
+import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,6 +38,25 @@ public class ArticleController {
         String resultCode = rs.getResultCode();
         String msg = rs.getMsg();
         Article _article = rs.getData();
+        return rs;
+    }
+
+    @PostMapping("/article/write2")
+    @ResponseBody
+    RsData write2(
+            HttpServletRequest req
+    ) {
+        String title = req.getParameter("title");
+        String body = req.getParameter("body");
+
+        Article article = articleService.write(title, body);
+
+        RsData<Article> rs = new RsData<>(
+                "S-1",
+                "%d번 게시물이 작성되었습니다.".formatted(article.getId()),
+                article
+        );
+
         return rs;
     }
 
