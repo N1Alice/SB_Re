@@ -22,6 +22,27 @@ public class MemberController {
         return "member/member/login";
     }
 
+    @Data
+    public static class LoginForm {
+        @NotBlank
+        private String username;
+        @NotBlank
+        private String password;
+    }
+
+    @PostMapping("/member/login")
+    String login(@Valid LoginForm loginForm) {
+        Member member = memberService.findByUsername(loginForm.username).get();
+        // True만 넘긴다. 유저네임이 틀려도, 유저네임은 맞으나 비밀번호가 다르면 터진다.
+        if (!member.getPassword().equals(loginForm.password)) {
+            throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
+        }
+
+        // 로그인 처리
+
+        return rq.redirect("/article/list", "로그인이 완료되었습니다.");
+    }
+
     @GetMapping("/member/join")
     String showJoin() {
         return "member/member/join";
