@@ -2,6 +2,7 @@ package com.ll.sb_re231120.domain.article.article.controller;
 
 import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
+import com.ll.sb_re231120.global.rq.Rq;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -22,6 +23,7 @@ import java.util.List;
 @Validated
 public class ArticleController {
     private final ArticleService articleService;
+    private final Rq rq;
     @GetMapping("/article/list")
     String showList(Model model) {
         List<Article> articles = articleService.findAll();
@@ -51,9 +53,7 @@ public class ArticleController {
     @PostMapping("/article/write")
     String write(@Valid WriteForm writeForm) {
         Article article = articleService.write(writeForm.title, writeForm.body);
-        String msg = "%d번 게시물이 생성되었습니다.".formatted(article.getId());
-        msg = URLEncoder.encode(msg, StandardCharsets.UTF_8);
-        return "redirect:/article/list?msg=" + msg;
+        return rq.redirect("/article/list", "%d번 게시물 생성되었습니다.".formatted(article.getId()));
     }
     @GetMapping("/article/modify/{id}")
     String showModify(Model model, @PathVariable long id) {
