@@ -2,6 +2,8 @@ package com.ll.sb_re231120.domain.article.article.controller;
 
 import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
+import com.ll.sb_re231120.domain.member.member.entity.Member;
+import com.ll.sb_re231120.domain.member.member.service.MemberService;
 import com.ll.sb_re231120.global.rq.Rq;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
@@ -21,13 +23,16 @@ import java.util.List;
 @Validated
 public class ArticleController {
     private final ArticleService articleService;
+    private final MemberService memberService;
     private final Rq rq;
+
     @GetMapping("/article/list")
     String showList(Model model) {
+        Member loginedMember = memberService.findById(2L).get();
         List<Article> articles = articleService.findAll();
 
         model.addAttribute("articles", articles);
-
+        model.addAttribute("loginedMember", loginedMember);
         return "article/article/list";
     }
 
