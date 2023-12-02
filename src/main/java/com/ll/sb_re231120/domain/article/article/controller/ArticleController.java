@@ -28,18 +28,18 @@ public class ArticleController {
 
         model.addAttribute("articles", articles);
 
-        return "article/list";
+        return "article/article/list";
     }
 
     @GetMapping("/article/detail/{id}")
     String showDetail(Model model, @PathVariable long id) {
         Article article = articleService.findById(id).get();
         model.addAttribute("article", article);
-        return "article/detail";
+        return "article/article/detail";
     }
     @GetMapping("/article/write")
     String showWrite() {
-        return "article/write";
+        return "article/article/write";
     }
     @Data
     public static class WriteForm {
@@ -59,7 +59,7 @@ public class ArticleController {
 
         model.addAttribute("article", article);
 
-        return "article/modify";
+        return "article/article/modify";
     }
 
     @Data
