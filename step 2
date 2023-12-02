@@ -1,0 +1,563 @@
+[33mcommit 0c55dc3d3377b15052d8eb2ca0859164790c39cb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:29:27 2023 +0900
+
+    step 2, koreanEncord
+
+[33mcommit 0772cbe227007cac3abbeab8c980bfbba5d1b4e3[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:24:59 2023 +0900
+
+    step 1
+
+[33mcommit a8cca2bc3fa87e1ea5661a9d9d9a6f0ed95d0406[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:18:23 2023 +0900
+
+    정리
+
+[33mcommit 17f9c17eb675facd9d99fb61652ccd720355d6ba[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:03:58 2023 +0900
+
+    step 82, modify4
+
+[33mcommit bed84d7dc8f2cf1a866153aa2f73ff77ea54b465[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:00:45 2023 +0900
+
+    step 81, modify3
+
+[33mcommit da9ee472137048f96443dff33db778e12fe6750b[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 22:00:00 2023 +0900
+
+    step 80, modify2
+
+[33mcommit d2d9c265d0ff06c4baf33b164230022122c655be[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 21:58:00 2023 +0900
+
+    step 79, modify
+
+[33mcommit fe09a547bbf60d7895d1510bd4e9960a92d93a43[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 21:53:35 2023 +0900
+
+    step 78, delete
+
+[33mcommit 637e1d4c7c0bdca76a8026482ffad5a93e871806[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 21:46:56 2023 +0900
+
+    step 77
+
+[33mcommit 5e2595f6fe1ed1a20a00dcb0bc5a35d5a19e046c[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Sat Dec 2 19:33:28 2023 +0900
+
+    step 76
+
+[33mcommit 6664b856feab4920c408379220fa97fbc325010c[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:25:25 2023 +0900
+
+    step 75
+
+[33mcommit 5e8fd9b2decc2971b9adda8b77ae615bd14dc38e[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:22:11 2023 +0900
+
+    step 74
+
+[33mcommit 93c0c8a5fe9963b4f5cc30bea4dd79234306f386[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:21:41 2023 +0900
+
+    step 73
+
+[33mcommit 38cde2f996bdd44589ded71d37304f2111bf8400[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:18:36 2023 +0900
+
+    step 72
+
+[33mcommit 006ae6377c143f23dda9c4b9ffc1d2cf5fe66a53[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:17:52 2023 +0900
+
+    step 71
+
+[33mcommit 15219c0df9e0f22523f253b8dba0a63a42dc11bc[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:11:18 2023 +0900
+
+    step 70,created  message
+
+[33mcommit 5393758e31134b788dc71b7eb5961b9cdca63413[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 01:01:31 2023 +0900
+
+    step 69, 302 Redirect
+
+[33mcommit 92f7ff1af80fb4f1c6b75048052cd10c501879d0[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 00:51:57 2023 +0900
+
+    step 68,
+
+[33mcommit e3ee8dea060603f89c8f510e67c9e09520e44ce2[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 00:50:44 2023 +0900
+
+    step 67, test data
+
+[33mcommit 49e02ce29b1c825798f8b1e03c21dee8a28c0f37[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Dec 1 00:48:51 2023 +0900
+
+    step 66, testdata
+
+[33mcommit 6cebca97743292add0f3d17db31cff66594ace40[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 15:30:26 2023 +0900
+
+    step 65, case
+
+[33mcommit 289343609d1d35c65c18018f6b8db2176bc042d2[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 15:28:00 2023 +0900
+
+    step 64, case
+
+[33mcommit 5677f30131cf623e19fd352b52b6bd44b1044d5b[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 15:27:44 2023 +0900
+
+    step 63, case
+
+[33mcommit 43393453e70762739a2bacd54473f2b3a2c5849e[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 15:07:15 2023 +0900
+
+    step 62, case
+
+[33mcommit c0cfcbb9e5a76cc2efeb3185fde95ae535733784[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:52:04 2023 +0900
+
+    step 61, case
+
+[33mcommit 21741b52b5f654538ea310d32d4bdcbd451c0d99[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:43:43 2023 +0900
+
+    step 60, case
+
+[33mcommit 1ebd9c734f09d5a5b8b0bc487aa263d8d49384f3[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:40:53 2023 +0900
+
+    step 59, case
+
+[33mcommit 747d3de30b39b0b2443240740e0cee0f3725f54c[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:30:21 2023 +0900
+
+    step 58, case
+
+[33mcommit 41a2c5435d67874b6967354a6edcc0551241f49f[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:23:42 2023 +0900
+
+    step 57, case
+
+[33mcommit cdc4f7dbbb2280dcdfa564bc7beb82aaa47c3490[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 14:22:50 2023 +0900
+
+    step 56, case
+
+[33mcommit cbcb264887a693dd4f0c2f621134ce32883a77d5[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 11:15:09 2023 +0900
+
+    step 55, case
+
+[33mcommit 4156584a2c89a97109ffcf1117829fa2af28a4f7[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 09:57:09 2023 +0900
+
+    step 54, case
+
+[33mcommit 8bf3cde8e3db09e6f85c88fcff4be0f5e24259e6[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 09:44:18 2023 +0900
+
+    step 52, case
+
+[33mcommit 285f1ad6ebb5090970ddb3fe9cdd3b674caffc52[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 09:43:07 2023 +0900
+
+    step 51, case
+
+[33mcommit 4804c062a20f728d0a03abb57e0599b0c2aeef82[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Thu Nov 30 09:29:45 2023 +0900
+
+    step 50, remove code about write2
+
+[33mcommit 0ac4dde5f23f9eaff04456d3f8dd5f9222a8ccd8[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 14:51:33 2023 +0900
+
+    step 48, Rq Scope
+
+[33mcommit fcd320217f3487bfe68870946c44b74953c17996[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 14:42:29 2023 +0900
+
+    step 47, Rq
+
+[33mcommit d3b403d6469b821c5f93355515db6621f79a24ac[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 14:26:32 2023 +0900
+
+    step 45, Scope
+
+[33mcommit d912f100b7a11621c735a4a50c0fade44e6fea83[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 14:21:42 2023 +0900
+
+    step 45, HttpServletResp 2
+
+[33mcommit 2464d36d03acc00e89368f6aa2b64ea9bf86a54e[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 13:33:51 2023 +0900
+
+    step 45, HttpServletResp
+
+[33mcommit c9920b08d1150bc8eeef619291729a273b4fd1d4[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 29 13:23:00 2023 +0900
+
+    step 45, HttpServletReq
+
+[33mcommit 433f31b67d829669b5b9c9ce1e1a24289b2b8d51[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 15:41:59 2023 +0900
+
+    step 44, Bean2
+
+[33mcommit 999267a19983b9f1593d26000ccf2ff1bc5e44b4[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 15:39:13 2023 +0900
+
+    step 43, Bean
+
+[33mcommit be7a5affc8e6f53486d971ec9086783a16aa7b74[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 15:26:34 2023 +0900
+
+    step 42, ArticleArrayList
+
+[33mcommit 10fd6a5e367aacaf59a92683c5eff0504e01030c[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 11:20:20 2023 +0900
+
+    step 41, @RequiredArgsConstructor
+
+[33mcommit 825e7c08b35b2be2589108afec16784559e1abf4[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 11:12:46 2023 +0900
+
+    step 40, @Autowired skip
+
+[33mcommit a740c78dfdb4d9dade6cc2470ce2cc8ab9c62426[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 11:10:16 2023 +0900
+
+    step 37, constructor injection2
+
+[33mcommit 4dffa3a6306bdfcd06d4e12991a1625f071e7211[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 11:05:09 2023 +0900
+
+    step 37, constructor injection
+
+[33mcommit 6706cd7067d42c5ea0323dee24d3f875aa9c9f3e[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 10:58:54 2023 +0900
+
+    step 36, @Service, @Repository
+
+[33mcommit 2fa46fb339265af85f68f040c134fc1ebadb0f50[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 28 10:57:36 2023 +0900
+
+    step 35, @component
+
+[33mcommit afb0423a21ca7236e1245413d4ac82f4c73d291c[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Mon Nov 27 01:54:20 2023 +0900
+
+     article/write step34, ArticleRepository
+
+[33mcommit 5c5abb5691d9cf9fba6c98a24c629ffc78eda682[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Mon Nov 27 00:04:30 2023 +0900
+
+     article/write step33, ArticleService
+
+[33mcommit 734cdd78815ee114cb59b8c944d93fe448dfa020[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Fri Nov 24 13:44:34 2023 +0900
+
+     article/write step32, package
+
+[33mcommit 472bd6a518856a948f0614927cfd7eaad14929d1[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 15:49:48 2023 +0900
+
+     article/write step31, action skip
+
+[33mcommit 4dceeeced4cb29808ff4dc89fa61a31684b3aedd[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 15:45:33 2023 +0900
+
+     article/write step30, doWrite -> write
+
+[33mcommit e3b504761d6e782b117760777b27e9caa309a2b2[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 15:39:33 2023 +0900
+
+     article/write step29, method=post
+
+[33mcommit 20cf871280d39f574292666bbe786beffc8e4647[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 15:30:53 2023 +0900
+
+    article/write, step28, idform 발송
+
+[33mcommit 557bf615e860ad69933ff8d7cce28ead258f4413[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 15:12:57 2023 +0900
+
+    article/write, step 27, ãId 제거
+
+[33mcommit b4def555150997023e5fd0de345673ce4c329ded[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:52:58 2023 +0900
+
+    article/write, step 26, ãonsubmit=submitWriteForm(); return false
+
+[33mcommit f7e408c9acb9646fb1da56e61a49cde7e88dffd0[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:44:42 2023 +0900
+
+    article/write, step 25, onsubmit = return false
+
+[33mcommit 97724d353f190ede2d307305046752acc92459b8[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:40:51 2023 +0900
+
+    article/write, step 24, div -> form, button click -> form submit to self page
+
+[33mcommit 4da114d0331626cb99aa1c3421dd220c0801d684[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:39:36 2023 +0900
+
+    article/write, step 23, a-> button type = submit
+
+[33mcommit 7af5029b5f4628fa4450580ed345713293900c3a[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:15:17 2023 +0900
+
+    article/write, step 22, focus
+
+[33mcommit 6ed70973a8fee2d89b74b948b16a3b5ebd4eca12[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:13:41 2023 +0900
+
+    article/write, step 21, const inputTitle
+
+[33mcommit 0e7bac2cd3410530c38f966a751c839f43b150bf[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 14:10:22 2023 +0900
+
+    article/write, step 20, 선Trim
+
+[33mcommit c0ddaeab468f3bcd49a3cd0d863644b2a7e05cf3[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 13:45:06 2023 +0900
+
+    article/write, step 19, Trim
+
+[33mcommit 26b0170da44afc8080a28ebefc86e21a6c6a3d9d[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 13:42:51 2023 +0900
+
+    article/write, step 18, validate check
+
+[33mcommit e6eceb25dc1c48335ff2e95e1f2308c1a20a78eb[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 13:35:41 2023 +0900
+
+    article/write, step 17, getElementById
+
+[33mcommit 543bb012795ecaa50547b13e6345278555ce64f9[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 13:32:20 2023 +0900
+
+    article/write, step 16, const title, const body
+
+[33mcommit 82451591e62ac9e26b242fbce5b05efc177fce8d[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 13:23:47 2023 +0900
+
+    article/write, step 15, location.href
+
+[33mcommit f5bcb8298932071c630938770aa14a0b1d3d98f3[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:49:02 2023 +0900
+
+    article/write, step 14, submitWriteForm
+
+[33mcommit 8fb90c6f0298a258e50ef7d6d9d1ad0f52953157[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:45:55 2023 +0900
+
+    article/write, step 13, javascript:;
+
+[33mcommit eb5686fa1aa6eb82d22d0a1ab6b7123cf459b3b6[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:43:03 2023 +0900
+
+    article/write, step 12, flex, input
+
+[33mcommit 8adaacfe2a2374f2f1575e399de8a9af82219946[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:34:13 2023 +0900
+
+    article/write, step 11, RsData, Generic
+
+[33mcommit 3703ef2e7a3b312feecd78eb542b713c278624b6[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:27:33 2023 +0900
+
+    article/write, step10, RsData, Article
+
+[33mcommit 0dd698e8990698c43ada14d76d452b897ed613fa[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 11:18:26 2023 +0900
+
+    article/write, step9, RsData, Object
+
+[33mcommit 9e918a55b01719f1d5bb2f1e17c4da008a014c73[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 10:40:49 2023 +0900
+
+    article/write, step8, resultCode
+
+[33mcommit a1a15d709d71464c34dcbc0ce483b1ebd030df33[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 08:22:06 2023 +0900
+
+    article/write, step7, List
+
+[33mcommit dabb98d237e896efb6102faa68ed15e75a99140b[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 08:18:16 2023 +0900
+
+    article/write, step, Array
+
+[33mcommit 0c4ea35a9fc2851a8f39c073ca5e3bb9b9624dcf[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 08:00:35 2023 +0900
+
+    article/write, step5
+
+[33mcommit c79777841b5f6bcdcc2ec8eb8a060982d7751ee2[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 07:56:00 2023 +0900
+
+    article/write, step4
+
+[33mcommit dd9c0d9ca69a2889f20eee0947b000c1c7be8f9b[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Wed Nov 22 07:52:44 2023 +0900
+
+    article/write, step3
+
+[33mcommit f2b2aa586506d6d9bbd710a318fa6eb01652924d[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 17:59:01 2023 +0900
+
+    article/write, step 2
+
+[33mcommit df0f843ebcd9b0800018e32f381f58562f70f353[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 17:49:54 2023 +0900
+
+    article/write, step 1
+
+[33mcommit 237d411738a3a050edfc79d04e69bfe45096a572[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 17:39:43 2023 +0900
+
+    Actuator
+
+[33mcommit 22a43a72ee59003dd018b1eef6d53766dc663f94[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 17:38:25 2023 +0900
+
+    Calc22
+
+[33mcommit 2f0b03bb9fc2f4f112cdba1657acafe18b290b94[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 17:33:18 2023 +0900
+
+    ãspring.thymeleaf.cache: false
+
+[33mcommit 14428ef05400476c50f1eabb841b9f0089086acf[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 16:07:27 2023 +0900
+
+    Timeleaf
+
+[33mcommit b24ef2c23925809c7c1015dfcafe802e648e9d89[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 15:38:48 2023 +0900
+
+    긴응답
+
+[33mcommit 5faa43a92d147d75452b60b974ff606de7b13a64[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 15:06:29 2023 +0900
+
+    json
+
+[33mcommit 4d02936b1f186caa8ad0d3e88ab17c347b53f25a[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Tue Nov 21 13:48:15 2023 +0900
+
+    Calc3 ~ 5
+
+[33mcommit da7b010c320b1284b0cbae2d47771a031b4a3c26[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Mon Nov 20 16:11:13 2023 +0900
+
+     Calc
+
+[33mcommit 896a40cde1662383f082c8311f13732ffe96b407[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Mon Nov 20 15:51:42 2023 +0900
+
+     /, /about
+
+[33mcommit e001ba685eeb25868cdcde577ccc6112e5ff6701[m
+Author: N1Alice <kc700370@gmail.com>
+Date:   Mon Nov 20 14:44:21 2023 +0900
+
+    setting
