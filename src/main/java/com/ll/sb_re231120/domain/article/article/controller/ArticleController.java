@@ -30,16 +30,16 @@ public class ArticleController {
 
     @GetMapping("/article/list")
     String showList(Model model, HttpServletRequest req) {
-        long fromSessionLoginedMemberId = Optional
+        long loginedMemberId = Optional
                 .ofNullable(req.getSession().getAttribute("loginedMemberId"))
                 // NULL 일수도있고 아닐수도있는거
                 .map(id -> (long) id)
                 // 있으면 long형으로 변환
                 .orElse(0L);
         // 없으면 내가 리턴
-        if (fromSessionLoginedMemberId > 0) {
-            Member loginedMember = memberService.findById(fromSessionLoginedMemberId).get();
-            model.addAttribute("fromSessionLoginedMember", loginedMember);
+        if (loginedMemberId > 0) {
+            Member loginedMember = memberService.findById(loginedMemberId).get();
+            model.addAttribute("loginedMember", loginedMember);
         }
 
         List<Article> articles = articleService.findAll();
@@ -50,7 +50,17 @@ public class ArticleController {
     }
 
     @GetMapping("/article/detail/{id}")
-    String showDetail(Model model, @PathVariable long id) {
+    String showDetail(Model model, @PathVariable long id, HttpServletRequest req) {
+        long loginedMemberId = Optional
+                .ofNullable(req.getSession().getAttribute("loginedMemberId"))
+                .map(_id -> (long) _id)
+                .orElse(0L);
+
+        if (loginedMemberId > 0) {
+            Member loginedMember = memberService.findById(loginedMemberId).get();
+            model.addAttribute("loginedMember", loginedMember);
+        }
+
         Article article = articleService.findById(id).get();
         model.addAttribute("article", article);
         return "article/article/detail";
