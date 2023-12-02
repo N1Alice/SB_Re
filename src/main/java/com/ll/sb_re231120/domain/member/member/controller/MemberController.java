@@ -40,7 +40,7 @@ public class MemberController {
             throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
         }
 
-        Cookie cookie = new Cookie("loginedMemberId", "2");
+        Cookie cookie = new Cookie("loginedMemberId", member.getId() + "");
         cookie.setPath("/");
         response.addCookie(cookie);
         // 인증을 통과했기에 증명서를 발급했다.
