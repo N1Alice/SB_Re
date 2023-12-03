@@ -45,6 +45,10 @@ public class ArticleService {
         return article.getAuthor().equals(actor);
     }
     public boolean canDelete(Member actor, Article article) {
-        return canModify(actor, article);
+        if (actor.isAdmin()) return true;
+
+        if (actor == null) return false;
+
+        return article.getAuthor().equals(actor);
     }
 }
