@@ -23,7 +23,10 @@ public class WebMvcConfig implements WebMvcConfigurer {
                 .addPathPatterns("/member/findUsername")
                 .addPathPatterns("/member/findPassword");
         registry.addInterceptor(needToLoginInterceptor)
-                .addPathPatterns("/adm/**");
+                .addPathPatterns("/adm/**")
+                .addPathPatterns("/article/write")
+                .addPathPatterns("/article/modify/**")
+                .addPathPatterns("/article/delete/**");
         registry.addInterceptor(needToAdminInterceptor)
                 .addPathPatterns("/adm/**");
     }
