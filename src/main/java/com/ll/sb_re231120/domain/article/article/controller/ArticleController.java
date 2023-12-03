@@ -9,7 +9,7 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
@@ -42,6 +42,7 @@ public class ArticleController {
         model.addAttribute("article", article);
         return "article/article/detail";
     }
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/article/write")
     String showWrite() {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
@@ -54,15 +55,15 @@ public class ArticleController {
         private String title;
         @NotBlank
         private String body;
-    }
+    }@PreAuthorize("isAuthenticated()")
     @PostMapping("/article/write")
-    @SneakyThrows
     String write(@Valid WriteForm writeForm, HttpServletRequest req) {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
 
         Article article = articleService.write(rq.getMember(), writeForm.title, writeForm.body);
         return rq.redirect("/article/list", "%d번 게시물 생성되었습니다.".formatted(article.getId()));
     }
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/article/modify/{id}")
     String showModify(Model model, @PathVariable long id) {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
@@ -83,7 +84,7 @@ public class ArticleController {
         @NotBlank
         private String body;
     }
-
+    @PreAuthorize("isAuthenticated()")
     @PostMapping("/article/modify/{id}")
     String modify(@PathVariable long id, @Valid ModifyForm modifyForm) {
         Article article = articleService.findById(id).get();
@@ -95,6 +96,7 @@ public class ArticleController {
         return rq.redirect("/article/list", "%d번 게시물 수정되었습니다.".formatted(id));
     }
 
+    @PreAuthorize("isAuthenticated()")
     @GetMapping("/article/delete/{id}")
     String delete(@PathVariable long id) {
         Article article = articleService.findById(id).get();
