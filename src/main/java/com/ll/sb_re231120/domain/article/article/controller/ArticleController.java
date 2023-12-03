@@ -82,7 +82,7 @@ public class ArticleController {
         private String body;
     }
     @PreAuthorize("isAuthenticated()")
-    @PostMapping("/modify/{id}")
+    @PutMapping("/modify/{id}")
     String modify(@PathVariable long id, @Valid ModifyForm modifyForm) {
         Article article = articleService.findById(id).get();
 
