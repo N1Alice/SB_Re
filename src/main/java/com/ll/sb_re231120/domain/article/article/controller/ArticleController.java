@@ -2,10 +2,8 @@ package com.ll.sb_re231120.domain.article.article.controller;
 
 import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
-import com.ll.sb_re231120.domain.member.member.entity.Member;
 import com.ll.sb_re231120.domain.member.member.service.MemberService;
 import com.ll.sb_re231120.global.rq.Rq;
-import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
@@ -18,7 +16,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RequiredArgsConstructor
@@ -29,19 +26,7 @@ public class ArticleController {
     private final Rq rq;
 
     @GetMapping("/article/list")
-    String showList(Model model, HttpServletRequest req) {
-        long loginedMemberId = Optional
-                .ofNullable(req.getSession().getAttribute("loginedMemberId"))
-                // NULL 일수도있고 아닐수도있는거
-                .map(id -> (long) id)
-                // 있으면 long형으로 변환
-                .orElse(0L);
-        // 없으면 내가 리턴
-        if (loginedMemberId > 0) {
-            Member loginedMember = memberService.findById(loginedMemberId).get();
-            model.addAttribute("loginedMember", loginedMember);
-        }
-
+    String showList(Model model) {
         List<Article> articles = articleService.findAll();
 
         model.addAttribute("articles", articles);
@@ -50,31 +35,13 @@ public class ArticleController {
     }
 
     @GetMapping("/article/detail/{id}")
-    String showDetail(Model model, @PathVariable long id, HttpServletRequest req) {
-        long loginedMemberId = Optional
-                .ofNullable(req.getSession().getAttribute("loginedMemberId"))
-                .map(_id -> (long) _id)
-                .orElse(0L);
-
-        if (loginedMemberId > 0) {
-            Member loginedMember = memberService.findById(loginedMemberId).get();
-            model.addAttribute("loginedMember", loginedMember);
-        }
-
+    String showDetail(Model model, @PathVariable long id) {
         Article article = articleService.findById(id).get();
         model.addAttribute("article", article);
         return "article/article/detail";
     }
     @GetMapping("/article/write")
     String showWrite() {
-        HttpServletRequest req = rq.getReq();
-        long loginedMemberId = rq.getLoginedMemberId();
-
-        if (loginedMemberId > 0) {
-            Member loginedMember = rq.getLoginedMember();
-            req.setAttribute("loginedMember", loginedMember);
-        }
-
         return "article/article/write";
     }
     @Data
