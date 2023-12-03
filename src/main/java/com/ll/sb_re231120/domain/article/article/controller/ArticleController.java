@@ -12,22 +12,22 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
 
 @Controller
 @RequiredArgsConstructor
-@Validated
+@RequestMapping("/article")
 public class ArticleController {
     private final ArticleService articleService;
     private final MemberService memberService;
     private final Rq rq;
 
-    @GetMapping("/article/list")
+    @GetMapping("/list")
     String showList(Model model) {
         List<Article> articles = articleService.findAll();
 
@@ -36,14 +36,14 @@ public class ArticleController {
         return "article/article/list";
     }
 
-    @GetMapping("/article/detail/{id}")
+    @GetMapping("/detail/{id}")
     String showDetail(Model model, @PathVariable long id) {
         Article article = articleService.findById(id).get();
         model.addAttribute("article", article);
         return "article/article/detail";
     }
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/article/write")
+    @GetMapping("/write")
     String showWrite() {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
 
@@ -56,7 +56,7 @@ public class ArticleController {
         @NotBlank
         private String body;
     }@PreAuthorize("isAuthenticated()")
-    @PostMapping("/article/write")
+    @PostMapping("/write")
     String write(@Valid WriteForm writeForm, HttpServletRequest req) {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
 
@@ -64,7 +64,7 @@ public class ArticleController {
         return rq.redirect("/article/list", "%d번 게시물 생성되었습니다.".formatted(article.getId()));
     }
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/article/modify/{id}")
+    @GetMapping("/modify/{id}")
     String showModify(Model model, @PathVariable long id) {
         if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
 
@@ -85,7 +85,7 @@ public class ArticleController {
         private String body;
     }
     @PreAuthorize("isAuthenticated()")
-    @PostMapping("/article/modify/{id}")
+    @PostMapping("/modify/{id}")
     String modify(@PathVariable long id, @Valid ModifyForm modifyForm) {
         Article article = articleService.findById(id).get();
 
@@ -97,7 +97,7 @@ public class ArticleController {
     }
 
     @PreAuthorize("isAuthenticated()")
-    @GetMapping("/article/delete/{id}")
+    @GetMapping("/delete/{id}")
     String delete(@PathVariable long id) {
         Article article = articleService.findById(id).get();
 
