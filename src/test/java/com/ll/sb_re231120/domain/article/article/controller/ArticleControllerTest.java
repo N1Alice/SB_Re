@@ -1,6 +1,5 @@
-package com.ll.sb_re231120;
+package com.ll.sb_re231120.domain.article.article.controller;
 
-import com.ll.sb_re231120.domain.article.article.controller.ArticleController;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.domain.article.article.service.ArticleService;
 import org.junit.jupiter.api.DisplayName;
