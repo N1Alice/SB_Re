@@ -15,6 +15,7 @@ import org.springframework.web.context.annotation.RequestScope;
 
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 
 @RequestScope
 @Component
@@ -39,6 +40,8 @@ public class Rq {
 
     public String redirect(String path, String msg) {
         msg = URLEncoder.encode(msg, StandardCharsets.UTF_8);
+        msg += ";ttl=" + new Date().getTime();
+
         return "redirect:" + path + "?msg=" + msg;
     }
 
@@ -74,7 +77,7 @@ public class Rq {
         if (!isLogined()) {
             return false;
         }
-        
+
         return user.getAuthorities()
                 .stream()
                 .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
