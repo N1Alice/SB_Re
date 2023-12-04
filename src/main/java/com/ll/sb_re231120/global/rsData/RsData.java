@@ -14,10 +14,12 @@ public class RsData<T> {
     //미완성 시켜라, T는 정해진것이 아닌 임의
     public boolean isSuccess() {
         return resultCode.startsWith("S-");
+        //성공여부
     }
 
     public boolean isFail() {
         return isSuccess() == false;
+        //실패여부
     }
 }
 
