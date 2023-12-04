@@ -1,6 +1,5 @@
 package com.ll.sb_re231120.domain.member.member.controller;
 
-import com.ll.sb_re231120.domain.member.member.entity.Member;
 import com.ll.sb_re231120.domain.member.member.service.MemberService;
 import com.ll.sb_re231120.global.rq.Rq;
 import jakarta.validation.Valid;
@@ -18,30 +17,30 @@ public class MemberController {
     private final MemberService memberService;
     private final Rq rq;
 
-    @PreAuthorize("isAuthenticated()")
+    @PreAuthorize("isAnonymous()")
     @GetMapping("/member/login")
     String showLogin() {
         return "member/member/login";
     }
 
-    @PreAuthorize("isAuthenticated()")
+    @PreAuthorize("isAnonymous()")
     @GetMapping("/member/join")
     String showJoin() {
         return "member/member/join";
     }
 
     @Data
-    public static class WriteForm {
+    public static class JoinForm {
         @NotBlank
         private String username;
         @NotBlank
         private String password;
     }
 
-    @PreAuthorize("isAuthenticated()")
+    @PreAuthorize("isAnonymous()")
     @PostMapping("/member/join")
-    String join(@Valid WriteForm joinForm) {
-        Member member = memberService.join(joinForm.username, joinForm.password);
+    String join(@Valid JoinForm joinForm) {
+        memberService.join(joinForm.username, joinForm.password);
 
         return rq.redirect("/member/login", "회원가입이 완료되었습니다.");
     }

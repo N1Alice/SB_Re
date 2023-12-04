@@ -1,4 +1,4 @@
-package com.ll.sb_re231120.domain.article.article.Service;
+package com.ll.sb_re231120.domain.article.article.service;
 
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.domain.article.article.repository.ArticleRepository;

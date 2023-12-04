@@ -1,6 +1,6 @@
 package com.ll.sb_re231120.global.initData;
 
-import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
+import com.ll.sb_re231120.domain.article.article.service.ArticleService;
 import com.ll.sb_re231120.domain.member.member.entity.Member;
 import com.ll.sb_re231120.domain.member.member.service.MemberService;
 import org.springframework.boot.ApplicationRunner;

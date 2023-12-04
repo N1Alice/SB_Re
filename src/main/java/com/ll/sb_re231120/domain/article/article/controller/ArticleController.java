@@ -1,6 +1,6 @@
 package com.ll.sb_re231120.domain.article.article.controller;
 
-import com.ll.sb_re231120.domain.article.article.Service.ArticleService;
+import com.ll.sb_re231120.domain.article.article.service.ArticleService;
 import com.ll.sb_re231120.domain.article.article.entity.Article;
 import com.ll.sb_re231120.domain.member.member.service.MemberService;
 import com.ll.sb_re231120.global.rq.Rq;
@@ -52,10 +52,11 @@ public class ArticleController {
         private String title;
         @NotBlank
         private String body;
-    }@PreAuthorize("isAuthenticated()")
+    }
+
+    @PreAuthorize("isAuthenticated()")
     @PostMapping("/write")
     String write(@Valid WriteForm writeForm, HttpServletRequest req) {
-        if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
 
         Article article = articleService.write(rq.getMember(), writeForm.title, writeForm.body);
         return rq.redirect("/article/list", "%d번 게시물 생성되었습니다.".formatted(article.getId()));
@@ -63,8 +64,6 @@ public class ArticleController {
     @PreAuthorize("isAuthenticated()")
     @GetMapping("/modify/{id}")
     String showModify(Model model, @PathVariable long id) {
-        if (!rq.isLogined()) throw new RuntimeException("로그인 후 이용해주세요.");
-
         Article article = articleService.findById(id).get();
 
         if (!articleService.canModify(rq.getMember(), article)) throw new RuntimeException("수정권한이 없습니다.");
@@ -105,5 +104,4 @@ public class ArticleController {
         return rq.redirect("/article/list", "%d번 게시물 삭제되었습니다.".formatted(id));
     }
 }
-
 
