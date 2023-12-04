@@ -15,6 +15,7 @@ import org.springframework.test.web.servlet.ResultActions;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.Matchers.containsString;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -107,7 +108,6 @@ public class ArticleControllerTest {
     }
 
     // POST /article/write
-    // POST /article/write
     @Test
     @DisplayName("게시물을 작성한다.")
     @WithUserDetails("user1")
@@ -136,6 +136,17 @@ public class ArticleControllerTest {
     }
 
     // GET /article/modify/{id}
+    @Test
+    @DisplayName("작성자가 아니라면 수정폼을 볼 수 없다.")
+    @WithUserDetails("user1")
+    void t5() throws Exception {
+        // WHEN
+        assertThrows(Exception.class, () -> {
+            ResultActions resultActions = mvc
+                    .perform(get("/article/modify/1"))
+                    .andDo(print());
+        });
+    }
     // PUT /article/modify/{id}
     // DELETE /article/delete/{id}
 }
